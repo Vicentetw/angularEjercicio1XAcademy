@@ -12,7 +12,24 @@ export class ListService {
     {product: 'Producto 1', cost: '$10'},
     {product: 'Producto 1', cost: '$10'}
   ];
+   /*
    getList(): List[]{
     return this.lists;
    }
+   */
+   getList(): List[] {
+    return this.lists;
+  }
+   getIndex(list: List): number {
+    return this.lists.indexOf(list);
+   }
+   deleteList(list: List): void {
+    const index = this.getIndex(list);
+    if (index !== -1) {
+      this.lists.splice(index, 1);
+    }
+  }
+  addList(list: List): void {
+    this.lists.push(list);
+  }
 }
