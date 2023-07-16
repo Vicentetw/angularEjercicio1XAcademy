@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { List } from 'src/app/interface/list';
 import { ListService } from 'src/app/services/list.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
