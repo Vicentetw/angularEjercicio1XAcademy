@@ -1,0 +1,11 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+.mat-card-title-align {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+  }
+  .button-container {
+    display: flex;
+    gap: 46px;
+    margin-top: 2px;
+  }

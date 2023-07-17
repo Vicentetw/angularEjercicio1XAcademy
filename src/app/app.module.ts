@@ -13,11 +13,15 @@ import { FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
+import { EditPriceComponent } from './components/pages/edit-price/edit-price.component';
+import { MatDialogModule} from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    EditPriceComponent
 
     
   ],
@@ -32,7 +36,9 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule,
     MatSnackBarModule,
     MatSlideToggleModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

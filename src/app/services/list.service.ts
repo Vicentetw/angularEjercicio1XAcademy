@@ -32,4 +32,10 @@ export class ListService {
   addList(list: List): void {
     this.lists.push(list);
   }
+  updateList(list: List): void {
+    const index = this.getIndex(list);
+    if (index !== -1) {
+      this.lists[index] = list;
+    }
+  }
 }
