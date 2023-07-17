@@ -9,8 +9,8 @@ export class ListService {
   private lists: List[]
   =[
     {product: 'Producto 1', cost: '$10'},
-    {product: 'Producto 1', cost: '$10'},
-    {product: 'Producto 1', cost: '$10'}
+    {product: 'Producto 2', cost: '$10'},
+    {product: 'Producto 3', cost: '$10'}
   ];
    /*
    getList(): List[]{
